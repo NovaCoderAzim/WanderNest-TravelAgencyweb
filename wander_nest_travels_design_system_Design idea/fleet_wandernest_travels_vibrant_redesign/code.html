@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WanderNest Travels - Fleet</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1f1b14",
+                        "on-primary-container": "#9becf7",
+                        "secondary-fixed-dim": "#ffb780",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#3c0700",
+                        "surface-container-low": "#fcf2e7",
+                        "on-tertiary-fixed-variant": "#83260e",
+                        "on-background": "#1f1b14",
+                        "primary": "#00535b",
+                        "on-secondary-fixed": "#2f1400",
+                        "primary-container": "#006d77",
+                        "on-secondary-fixed-variant": "#6f3800",
+                        "inverse-primary": "#82d3de",
+                        "surface-tint": "#006972",
+                        "outline": "#6f797a",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#ffab69",
+                        "surface-container-highest": "#ebe1d6",
+                        "primary-fixed-dim": "#82d3de",
+                        "on-surface-variant": "#3e494a",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#8e4e14",
+                        "on-secondary-container": "#783d01",
+                        "tertiary-fixed-dim": "#ffb4a2",
+                        "primary-fixed": "#9ff0fb",
+                        "tertiary-fixed": "#ffdad2",
+                        "surface": "#fff8f3",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#ffd6cc",
+                        "secondary-fixed": "#ffdcc4",
+                        "background": "#fff8f3",
+                        "tertiary": "#882a12",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#001f23",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#004f56",
+                        "surface-variant": "#ebe1d6",
+                        "surface-container-high": "#f1e7dc",
+                        "outline-variant": "#bec8ca",
+                        "surface-dim": "#e2d9ce",
+                        "inverse-on-surface": "#f9efe4",
+                        "surface-container": "#f6ece1",
+                        "inverse-surface": "#353028",
+                        "surface-bright": "#fff8f3",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#a84127",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "sm": "12px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "xl": "80px",
+                        "xs": "4px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased overflow-x-hidden min-h-screen flex flex-col">
+<!-- TopNavBar (Web) -->
+<nav class="hidden md:flex fixed top-0 w-full z-50 justify-between items-center px-margin-desktop py-4 max-w-7xl mx-auto bg-surface/80 backdrop-blur-md shadow-sm transition-all duration-300" id="top-nav">
+<div class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+            WanderNest Travels
+        </div>
+<div class="flex items-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:scale-105 duration-200" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:scale-105 duration-200" href="#">Packages</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md scale-95 duration-150" href="#">Fleet</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:scale-105 duration-200" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:scale-105 duration-200" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:scale-105 duration-200" href="#">Gallery</a>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:shadow-md hover:scale-105 transition-all duration-200">
+            Get a Quote
+        </button>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-[80px] md:pt-[100px] pb-[100px] md:pb-0">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl max-w-7xl mx-auto text-center relative overflow-hidden">
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-[300px] bg-gradient-to-r from-surface-container-low to-secondary-fixed-dim/20 opacity-30 rounded-[100px] blur-3xl -z-10"></div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-primary mb-4">YOUR RIDE, YOUR WAY.</h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8">Discover our premium fleet of vehicles designed for comfort, safety, and reliability on every journey. Plan the trip. We'll handle the journey.</p>
+<!-- Categories / Chips -->
+<div class="flex flex-wrap justify-center gap-3">
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-4 py-2 rounded-full shadow-sm hover:scale-105 transition-all">All</button>
+<button class="bg-surface-container-high text-on-surface-variant font-label-md text-label-md px-4 py-2 rounded-full shadow-sm hover:bg-primary-container hover:text-on-primary-container transition-all">Sedan</button>
+<button class="bg-surface-container-high text-on-surface-variant font-label-md text-label-md px-4 py-2 rounded-full shadow-sm hover:bg-primary-container hover:text-on-primary-container transition-all">SUV</button>
+<button class="bg-surface-container-high text-on-surface-variant font-label-md text-label-md px-4 py-2 rounded-full shadow-sm hover:bg-primary-container hover:text-on-primary-container transition-all">Tempo Traveller</button>
+<button class="bg-surface-container-high text-on-surface-variant font-label-md text-label-md px-4 py-2 rounded-full shadow-sm hover:bg-primary-container hover:text-on-primary-container transition-all">Mini Bus</button>
+<button class="bg-surface-container-high text-on-surface-variant font-label-md text-label-md px-4 py-2 rounded-full shadow-sm hover:bg-primary-container hover:text-on-primary-container transition-all">Luxury</button>
+</div>
+</section>
+<!-- Fleet Grid -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-gutter">
+<!-- Vehicle Card 1: Innova -->
+<div class="bg-surface-container-lowest rounded-DEFAULT border border-surface-variant shadow-sm hover:shadow-md transition-shadow p-sm flex flex-col group overflow-hidden relative glass-card">
+<div class="absolute top-0 right-0 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 rounded-bl-DEFAULT rounded-tr-DEFAULT z-10">Popular</div>
+<div class="h-48 rounded-lg overflow-hidden relative mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean, modern white Toyota Innova Crysta parked on a sunny paved driveway next to a lush green lawn. The lighting is bright and cheerful, evoking a warm, reliable travel vibe. The background is slightly blurred to emphasize the vehicle. Warm modern aesthetic with natural sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTjX44g6NfLXhaKO5MWXXQKR1FZOWt7EYv3VFXVXtut70JQMUCFdVRku5egmHZoZWG1NKemADnDoYkUfJOQxQVjW5ibFSskJFMohjxiJhfg4Cba2VuHH41ZOEduhYgdjLmsjmkhogBw6SUIgSk1m-egBmk8Qr4HAlxxEnBo5OAg0hBH8AeTaljKrUF2nHQyKz5AvTJ9lWQ6VViTxWFVRKlaLyirLrnxUgTxQTi51bxkELJaN72mUac"/>
+</div>
+<div class="flex-grow flex flex-col justify-between px-2">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Toyota Innova Crysta</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed text-on-primary-fixed px-2 py-1 rounded">SUV</span>
+</div>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">group</span> 7+1 Seats
+                                </li>
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">ac_unit</span> AC Equipped
+                                </li>
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">luggage</span> Large Luggage
+                                </li>
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">airline_seat_recline_normal</span> With Driver
+                                </li>
+</ul>
+</div>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-surface-variant">
+<div>
+<span class="block font-label-sm text-label-sm text-outline">Starting from</span>
+<span class="font-headline-sm text-headline-sm text-primary">₹2,500/day</span>
+</div>
+<button class="bg-secondary text-on-secondary font-label-md text-label-md px-5 py-2 rounded-full hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm">
+                                GET A QUOTE
+                            </button>
+</div>
+</div>
+</div>
+<!-- Vehicle Card 2: Dzire -->
+<div class="bg-surface-container-lowest rounded-DEFAULT border border-surface-variant shadow-sm hover:shadow-md transition-shadow p-sm flex flex-col group overflow-hidden relative glass-card">
+<div class="h-48 rounded-lg overflow-hidden relative mb-4 bg-surface-variant flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sleek silver Maruti Dzire sedan parked on a clean, modern city street with blurred contemporary buildings in the background. The lighting is soft and natural, emphasizing the car's sleek lines. The overall mood is professional and efficient, perfect for urban travel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABr2Jdatp9a6bwmEjFDsuGoVtRYBi5KdbCB4riLtETO81C9eHFMW6EqqAm_y6RvoUpawiii4uKtIZUo6WfrOPMSqd4AvdSuEi-Lk9R8E0lU1YmIjofqqWlYDlQ09BLiSC-u9s_zg_sGhbvpA5w-zlhviMs5358ZyioMQ0cOUFvEGHoiV6_Af3uA9mTOC187dOq4BNmHo_VnuC4Bw6jgW3UR7ecP4CIZ3lf6VMe4Mw-qZGMBtyrFapw"/>
+</div>
+<div class="flex-grow flex flex-col justify-between px-2">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Maruti Dzire</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed text-on-primary-fixed px-2 py-1 rounded">Sedan</span>
+</div>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">group</span> 4+1 Seats
+                                </li>
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">ac_unit</span> AC Equipped
+                                </li>
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">airline_seat_recline_normal</span> With Driver
+                                </li>
+</ul>
+</div>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-surface-variant">
+<div>
+<span class="block font-label-sm text-label-sm text-outline">Starting from</span>
+<span class="font-headline-sm text-headline-sm text-primary">₹1,800/day</span>
+</div>
+<button class="bg-secondary text-on-secondary font-label-md text-label-md px-5 py-2 rounded-full hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm">
+                                GET A QUOTE
+                            </button>
+</div>
+</div>
+</div>
+<!-- Vehicle Card 3: Tempo Traveller -->
+<div class="bg-surface-container-lowest rounded-DEFAULT border border-surface-variant shadow-sm hover:shadow-md transition-shadow p-sm flex flex-col group overflow-hidden relative glass-card">
+<div class="h-48 rounded-lg overflow-hidden relative mb-4 bg-surface-variant flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A spacious white Tempo Traveller parked near a scenic mountain outlook. The background shows soft rolling hills and a clear blue sky, evoking a sense of group adventure and discovery. The lighting is bright and optimistic, fitting the warm modernism travel theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfkeoRFQaxlGpSp3WRhMJP3hTJZcQr8Alu7sDexUxmWk47PgMm6uCgqjfohh7lwNUQZTnCaqwfdSNOafHpIbvFrJLjo9X77kafCLGMgO7f6qwb5Srkfi2Xm061eEAhttWZ67alB6xLlnFQeW8m6Lvr_jmov5pTI3v7ux0ZZL18KeBCW8gC5_8l9GdSlTZAM_K3s0aadA4XmzX60HgIyt6MriZiRvR7LjPPdWrvChk7Qu_C4BnsaryL"/>
+</div>
+<div class="flex-grow flex flex-col justify-between px-2">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tempo Traveller</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed text-on-primary-fixed px-2 py-1 rounded">Mini Bus</span>
+</div>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">group</span> 12+1 Seats
+                                </li>
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">ac_unit</span> AC Equipped
+                                </li>
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">diversity_3</span> Group Travel
+                                </li>
+</ul>
+</div>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-surface-variant">
+<div>
+<span class="block font-label-sm text-label-sm text-outline">Starting from</span>
+<span class="font-headline-sm text-headline-sm text-primary">₹4,500/day</span>
+</div>
+<button class="bg-secondary text-on-secondary font-label-md text-label-md px-5 py-2 rounded-full hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm">
+                                GET A QUOTE
+                            </button>
+</div>
+</div>
+</div>
+<!-- Vehicle Card 4: Force Urbania -->
+<div class="bg-surface-container-lowest rounded-DEFAULT border border-surface-variant shadow-sm hover:shadow-md transition-shadow p-sm flex flex-col group overflow-hidden relative glass-card">
+<div class="absolute top-0 right-0 bg-tertiary text-on-tertiary font-label-sm text-label-sm px-3 py-1 rounded-bl-DEFAULT rounded-tr-DEFAULT z-10">Premium</div>
+<div class="h-48 rounded-lg overflow-hidden relative mb-4 bg-surface-variant flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A luxurious silver Force Urbania premium van parked in front of a sleek, contemporary hotel entrance. Soft, warm lighting highlights the vehicle's large windows and modern design. The setting suggests high-end, comfortable group transportation in a sophisticated environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLG_MZdDpd8RZO3r-Snj0BCERbvClgofBtjD1Gow9EpK09EMXK7cKVBx3GEsqsoOOTECHxNxlcpfsQoXC98yVwTUCXx24xRVr_xQjVok3C_yN6nvl1F2kwI3wB4Dhi2yieFXmZ1_3j6eng_djqY5pQ4UW7hIWIJihnc0qKnkBeCgK_2x3fSxD2BMcAmTL1JzJNty3sL8_zTTJOu3Oyj8ntvcWIly08IE70IP3yDxBKuauXchgTJyyf"/>
+</div>
+<div class="flex-grow flex flex-col justify-between px-2">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Force Urbania</h3>
+<span class="font-label-md text-label-md text-primary bg-primary-fixed text-on-primary-fixed px-2 py-1 rounded">Luxury</span>
+</div>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">group</span> 16+1 Seats
+                                </li>
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">star</span> Premium Interior
+                                </li>
+<li class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-outline">ac_unit</span> Advanced AC
+                                </li>
+</ul>
+</div>
+<div class="flex items-center justify-between mt-auto pt-4 border-t border-surface-variant">
+<div>
+<span class="block font-label-sm text-label-sm text-outline">Starting from</span>
+<span class="font-headline-sm text-headline-sm text-primary">₹6,000/day</span>
+</div>
+<button class="bg-secondary text-on-secondary font-label-md text-label-md px-5 py-2 rounded-full hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm">
+                                GET A QUOTE
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary full-width rounded-t-lg w-full px-margin-desktop py-xl grid grid-cols-1 md:grid-cols-4 gap-gutter mt-auto">
+<div class="flex flex-col gap-4">
+<div class="font-headline-sm text-headline-sm font-bold text-on-secondary-container dark:text-on-secondary flex items-center gap-2">
+<span class="material-symbols-outlined">explore</span>
+                WanderNest Travels
+            </div>
+<p class="font-body-md text-body-md opacity-80 mt-2">© 2024 WanderNest Travels. Plan the trip. We'll handle the journey.</p>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-label-md text-label-md font-bold mb-2">Contact</h4>
+<a class="text-on-secondary-container/80 dark:text-on-secondary/80 hover:text-on-secondary-container hover:translate-x-1 transition-transform focus:ring-2 focus:ring-primary font-body-md text-body-md" href="#">Chennai Office</a>
+<a class="text-on-secondary-container/80 dark:text-on-secondary/80 hover:text-on-secondary-container hover:translate-x-1 transition-transform focus:ring-2 focus:ring-primary font-body-md text-body-md" href="#">WhatsApp Support</a>
+<a class="text-on-secondary-container/80 dark:text-on-secondary/80 hover:text-on-secondary-container hover:translate-x-1 transition-transform focus:ring-2 focus:ring-primary font-body-md text-body-md" href="#">Email Us</a>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-label-md text-label-md font-bold mb-2">Explore</h4>
+<a class="text-on-secondary-container/80 dark:text-on-secondary/80 hover:text-on-secondary-container hover:translate-x-1 transition-transform focus:ring-2 focus:ring-primary font-body-md text-body-md" href="#">Popular Destinations</a>
+<a class="text-on-secondary-container/80 dark:text-on-secondary/80 hover:text-on-secondary-container hover:translate-x-1 transition-transform focus:ring-2 focus:ring-primary font-body-md text-body-md" href="#">Fleet</a>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-label-md text-label-md font-bold mb-2">Legal</h4>
+<a class="text-on-secondary-container/80 dark:text-on-secondary/80 hover:text-on-secondary-container hover:translate-x-1 transition-transform focus:ring-2 focus:ring-primary font-body-md text-body-md" href="#">Privacy Policy</a>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin-mobile py-2 shadow-lg bg-surface dark:bg-surface-dim rounded-t-lg">
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1 hover:bg-surface-container-high scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-xl px-4 py-1 transition-all" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-label-sm text-label-sm mt-1">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-xl px-4 py-1 transition-all" href="#">
+<span class="material-symbols-outlined">call</span>
+<span class="font-label-sm text-label-sm mt-1">Call</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-xl px-4 py-1 transition-all" href="#">
+<span class="material-symbols-outlined">menu</span>
+<span class="font-label-sm text-label-sm mt-1">Menu</span>
+</a>
+</nav>
+</body></html>

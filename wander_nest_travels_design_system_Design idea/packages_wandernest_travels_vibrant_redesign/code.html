@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Curated Journeys - WanderNest Travels</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Guidelines -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1f1b14",
+                    "on-primary-container": "#9becf7",
+                    "secondary-fixed-dim": "#ffb780",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#3c0700",
+                    "surface-container-low": "#fcf2e7",
+                    "on-tertiary-fixed-variant": "#83260e",
+                    "on-background": "#1f1b14",
+                    "primary": "#00535b",
+                    "on-secondary-fixed": "#2f1400",
+                    "primary-container": "#006d77",
+                    "on-secondary-fixed-variant": "#6f3800",
+                    "inverse-primary": "#82d3de",
+                    "surface-tint": "#006972",
+                    "outline": "#6f797a",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#ffab69",
+                    "surface-container-highest": "#ebe1d6",
+                    "primary-fixed-dim": "#82d3de",
+                    "on-surface-variant": "#3e494a",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#8e4e14",
+                    "on-secondary-container": "#783d01",
+                    "tertiary-fixed-dim": "#ffb4a2",
+                    "primary-fixed": "#9ff0fb",
+                    "tertiary-fixed": "#ffdad2",
+                    "surface": "#fff8f3",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#ffd6cc",
+                    "secondary-fixed": "#ffdcc4",
+                    "background": "#fff8f3",
+                    "tertiary": "#882a12",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#001f23",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#004f56",
+                    "surface-variant": "#ebe1d6",
+                    "surface-container-high": "#f1e7dc",
+                    "outline-variant": "#bec8ca",
+                    "surface-dim": "#e2d9ce",
+                    "inverse-on-surface": "#f9efe4",
+                    "surface-container": "#f6ece1",
+                    "inverse-surface": "#353028",
+                    "surface-bright": "#fff8f3",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#a84127",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "sm": "12px",
+                    "margin-desktop": "64px",
+                    "base": "8px",
+                    "xl": "80px",
+                    "xs": "4px",
+                    "lg": "48px"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg": [
+                            "Playfair Display"
+                    ],
+                    "headline-md": [
+                            "Playfair Display"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "display-lg-mobile": [
+                            "Playfair Display"
+                    ],
+                    "label-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-sm": [
+                            "Playfair Display"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg": [
+                            "56px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "40px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-sm": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 40px -10px rgba(0, 83, 91, 0.15);
+        }
+        .glass-overlay {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-[1200px] mx-auto bg-surface/80 backdrop-blur-md shadow-sm hidden md:flex">
+<div class="font-headline-md text-headline-md font-bold text-primary">
+            WanderNest Travels
+        </div>
+<nav class="flex items-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:scale-105 duration-200" href="#">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md scale-95 duration-150" href="#">Packages</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:scale-105 duration-200" href="#">Fleet</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:scale-105 duration-200" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:scale-105 duration-200" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md hover:scale-105 duration-200" href="#">Gallery</a>
+</nav>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
+            Get a Quote
+        </button>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-24 md:pt-32 pb-xl px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto w-full">
+<!-- Header Section -->
+<section class="text-center mb-xl">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">CURATED JOURNEYS</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Discover our handpicked travel experiences designed for the modern explorer. From serene hill stations to ancient temple trails, find your perfect escape.
+            </p>
+</section>
+<!-- Filters -->
+<section class="flex flex-wrap justify-center gap-4 mb-lg">
+<button class="px-6 py-3 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm hover:scale-105 transition-transform">All</button>
+<button class="px-6 py-3 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-variant transition-colors">Family</button>
+<button class="px-6 py-3 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-variant transition-colors">Honeymoon</button>
+<button class="px-6 py-3 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-variant transition-colors">Pilgrimage</button>
+<button class="px-6 py-3 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant hover:bg-surface-variant transition-colors">Weekend</button>
+</section>
+<!-- Package Cards Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-lg border border-[#F5EBE0] card-shadow overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+<div class="relative h-64 w-full overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="A breathtaking landscape view of Ooty hill station in India. Lush green rolling tea gardens cover the undulating hills under a bright, clear blue sky. A soft, warm morning sunlight bathes the scenery, creating a tranquil and inviting travel aesthetic typical of a premium modern tour package. Soft mist lingers in the deep valleys." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBPJp31M0w2MLPKPzOUEzpvecvO15byCKgI_TAHwmT8c5GziNkiSNOdfeN8ULTnDlx2YqOYw8MHiEhpZx35Dg5bYCQzvr5QP4Uj37TgIT6AacHdHMOWKm8_Z1JHCtkUw-d_o2V-07r_m5wEAFScAXEqRTFAc0kC8FfBDYYx3xzOqgPu-bByu_Esf1EFAVEwJkXI9nyUc03sDSoJDbHrixGQV1sbA1ig5kQhgVR_hQqPFLDDvfJwgW3"/>
+<div class="absolute top-4 right-4 bg-inverse-primary text-primary px-3 py-1 rounded-full font-label-sm text-label-sm">
+                        3N / 4D
+                    </div>
+</div>
+<div class="p-6">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-2">Ooty Getaway</h2>
+<div class="flex gap-4 mb-6">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">hotel</span> Hotel
+                        </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">directions_car</span> Transport
+                        </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span> Sightseeing
+                        </div>
+</div>
+<div class="flex justify-between items-end border-t border-surface-variant pt-4">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">Starting from</p>
+<p class="font-headline-sm text-headline-sm text-secondary-container">₹12,499</p>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-full hover:shadow-md transition-all">
+                            View Details
+                        </button>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-lg border border-[#F5EBE0] card-shadow overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+<div class="relative h-64 w-full overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="A serene view of Kodaikanal lake surrounded by dense pine forests. Small colorful rowboats float gently on the calm, reflective water. The lighting is soft and diffuse, suggesting a crisp mountain morning. The scene conveys a peaceful retreat, ideal for a modern travel brochure, with a warm, natural color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsBWoyxhA95vsTyp2TPV8gkYLTtIjRvls2Z8Xfx2eipHSt1blmXEdaVHJPsDHN0LpdQKE2gQs8Ul_KPVGy0igP-QFukmgDMfFmfYRmnRBxRwaNOKrbkZgMlBHH0eeoJCqLLq45Zmox9uD3yLg1fifMDck8mXGtuaooYyCYfGcX5peneUWx_xxSZgwInUr6wBba4yjdzzD8PXclerx8uuAYH7_Ehht5KfVMaz0XMKnKQgQIiKrGZVWf"/>
+<div class="absolute top-4 right-4 bg-inverse-primary text-primary px-3 py-1 rounded-full font-label-sm text-label-sm">
+                        2N / 3D
+                    </div>
+</div>
+<div class="p-6">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-2">Kodaikanal Escape</h2>
+<div class="flex gap-4 mb-6">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">hotel</span> Hotel
+                        </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">directions_car</span> Transport
+                        </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span> Sightseeing
+                        </div>
+</div>
+<div class="flex justify-between items-end border-t border-surface-variant pt-4">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">Starting from</p>
+<p class="font-headline-sm text-headline-sm text-secondary-container">₹9,999</p>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-full hover:shadow-md transition-all">
+                            View Details
+                        </button>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest rounded-lg border border-[#F5EBE0] card-shadow overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+<div class="relative h-64 w-full overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="A vibrant street scene in the French Quarter of Pondicherry. Colonial-era buildings painted in bright mustard yellow with white trim line a clean, cobbled street. A vintage bicycle leans against a bougainvillea-draped wall. The atmosphere is warm, sunny, and culturally rich, embodying a joyful weekend exploration vibe in a modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxhPmvAXO95AqPSiETaxzQn7cYzhyYr3Rfqv3fj_sxiU3uDQRwSnB17XvoRtI3kmfJy8xc1Vh0aIaLbjUPnr4RxfUOkYTJN2kiX6UwgPKKwPSbGg5OWbE2-f3D5r41VvWIjLYiUZedMUxuCTbc_ZI2ExMfugLd8HozEK1rsry3BBXbCmWFLO0Spm0xQr14NEbcvzd3dLFniRBx1OoNsBgbk0qvIULQp2fA23p478Om5n40FZu_fxKN"/>
+<div class="absolute top-4 right-4 bg-inverse-primary text-primary px-3 py-1 rounded-full font-label-sm text-label-sm">
+                        2N / 3D
+                    </div>
+</div>
+<div class="p-6">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-2">Pondicherry Weekend</h2>
+<div class="flex gap-4 mb-6">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">hotel</span> Hotel
+                        </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">directions_car</span> Transport
+                        </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">local_cafe</span> Meals
+                        </div>
+</div>
+<div class="flex justify-between items-end border-t border-surface-variant pt-4">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">Starting from</p>
+<p class="font-headline-sm text-headline-sm text-secondary-container">₹10,500</p>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-full hover:shadow-md transition-all">
+                            View Details
+                        </button>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-surface-container-lowest rounded-lg border border-[#F5EBE0] card-shadow overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+<div class="relative h-64 w-full overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="A majestic view of the Meenakshi Amman Temple towers in Madurai, India, intricately carved with thousands of colorful deities. The warm golden hour light illuminates the monumental architecture against a soft, pale blue sky. The image captures the spiritual grandeur and historical depth of a cultural pilgrimage in a high-end travel style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmuRkXT9wbk0Uy4-MTp6dtOYzjPth8uToR47G3bQNkFCfd0eDdJ81ROKWEPcXApPom_GOupPnW1gIu0qQY4njKKMQplPmiB_9-ePx_3ECJG29XrYgczizLMhBcfFanBtXm4J06tg9xcFe9Idlucf1H_kD3pnstL3T8URDbO2gps4LXnhbORlSdwMc3Yh5fenKR8YCKFF4e3gH07pqUVorYkNJXLf7sqH-BFDRvnb60XoyojBT3QQoQ"/>
+<div class="absolute top-4 right-4 bg-inverse-primary text-primary px-3 py-1 rounded-full font-label-sm text-label-sm">
+                        1N / 2D
+                    </div>
+</div>
+<div class="p-6">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-2">Madurai Temple Trail</h2>
+<div class="flex gap-4 mb-6">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">hotel</span> Hotel
+                        </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">directions_car</span> Transport
+                        </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]"> temple_hindu</span> Guide
+                        </div>
+</div>
+<div class="flex justify-between items-end border-t border-surface-variant pt-4">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">Starting from</p>
+<p class="font-headline-sm text-headline-sm text-secondary-container">₹6,999</p>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-full hover:shadow-md transition-all">
+                            View Details
+                        </button>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="bg-surface-container-lowest rounded-lg border border-[#F5EBE0] card-shadow overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+<div class="relative h-64 w-full overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="The long, iconic Pamban Bridge stretching across the azure blue ocean towards Rameswaram island. The pristine water sparkles under a clear sky. A train is seen traversing the bridge, symbolizing the journey. The visual is sweeping and cinematic, with a bright, uplifting atmosphere suited for a premium modern travel experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhABxPL40PmI6oLg8XaGJmwts2aD2HeiW3Z8StSEaYizHAVSYL2gOZ7Y33tVhDNFip0CSbg_fGvh3cHoHCea_YWTSLEzEGu5-EIjIPfGfE8mvUstR8e7HBlg0Ryb_mHEV-sX20SY9ZaCqfou36bFl1PPsp0FLewV3akNT7kVj1MypPXGOsvFHX7ClqVPn8F9vD_Ib-Q_2BxGXZ2LIkZZHw_D3BUHrPxOzCuOGcy4MAKH5qeHN5nLQV"/>
+<div class="absolute top-4 right-4 bg-inverse-primary text-primary px-3 py-1 rounded-full font-label-sm text-label-sm">
+                        2N / 3D
+                    </div>
+</div>
+<div class="p-6">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-2">Rameswaram Pilgrimage</h2>
+<div class="flex gap-4 mb-6">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">hotel</span> Hotel
+                        </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">directions_car</span> Transport
+                        </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span> Sightseeing
+                        </div>
+</div>
+<div class="flex justify-between items-end border-t border-surface-variant pt-4">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">Starting from</p>
+<p class="font-headline-sm text-headline-sm text-secondary-container">₹11,200</p>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-full hover:shadow-md transition-all">
+                            View Details
+                        </button>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="bg-surface-container-lowest rounded-lg border border-[#F5EBE0] card-shadow overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+<div class="relative h-64 w-full overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="A montage-style, highly artistic photograph representing the diverse landscape of Tamil Nadu, featuring a blend of a coastal beach scene, a lush mountain valley, and a glimpse of heritage architecture. The lighting is bright and modern, utilizing soft cream and sky blue tones to evoke a comprehensive and premium explorer's journey." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANqXSV35krvyaOoSc6Wsa0xmt-A9bGLlFG_cY5A5xRwfF3mtXtsnEB42wcQIsQ9s6tq6FEdu_rbcoj9IE_ZSG5MCs10QgDHC6MN5pODS4R8lsUcg0PWxGtwieY48td37ZG3_hBdV7iV3RMHNjbGKOI-ysgKbiQziYrnDDRyjuSiZX0WWwVuUo7WRuJyitq4Pht8BIgPuqbUIPJK9Vm9PuLEFwZfWUsB1yhkhrKPNXV5tTvlaEN4jmR"/>
+<div class="absolute top-4 right-4 bg-inverse-primary text-primary px-3 py-1 rounded-full font-label-sm text-label-sm">
+                        6N / 7D
+                    </div>
+</div>
+<div class="p-6">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-2">Tamil Nadu Explorer</h2>
+<div class="flex gap-4 mb-6">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">hotel</span> Hotel
+                        </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">directions_car</span> Transport
+                        </div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">restaurant</span> All Meals
+                        </div>
+</div>
+<div class="flex justify-between items-end border-t border-surface-variant pt-4">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1">Starting from</p>
+<p class="font-headline-sm text-headline-sm text-secondary-container">₹35,000</p>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-full hover:shadow-md transition-all">
+                            View Details
+                        </button>
+</div>
+</div>
+</article>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary-container w-full px-margin-desktop py-xl grid grid-cols-1 md:grid-cols-4 gap-gutter mt-auto rounded-t-lg">
+<div class="col-span-1 md:col-span-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-secondary-container mb-4">WanderNest Travels</h3>
+<p class="font-body-md text-body-md text-on-secondary-container/80 mb-6">
+                © 2024 WanderNest Travels. Plan the trip. We'll handle the journey.
+            </p>
+</div>
+<div class="flex flex-col gap-3">
+<a class="text-on-secondary-container/80 hover:text-on-secondary-container font-label-sm text-label-sm hover:translate-x-1 transition-transform" href="#">Chennai Office</a>
+<a class="text-on-secondary-container/80 hover:text-on-secondary-container font-label-sm text-label-sm hover:translate-x-1 transition-transform" href="#">WhatsApp Support</a>
+<a class="text-on-secondary-container/80 hover:text-on-secondary-container font-label-sm text-label-sm hover:translate-x-1 transition-transform" href="#">Email Us</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="text-on-secondary-container/80 hover:text-on-secondary-container font-label-sm text-label-sm hover:translate-x-1 transition-transform" href="#">Popular Destinations</a>
+<a class="text-on-secondary-container/80 hover:text-on-secondary-container font-label-sm text-label-sm hover:translate-x-1 transition-transform" href="#">Privacy Policy</a>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin-mobile py-2 bg-surface shadow-lg rounded-t-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-xl px-4 py-1" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-xl px-4 py-1" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-label-sm text-label-sm mt-1">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-xl px-4 py-1" href="#">
+<span class="material-symbols-outlined">call</span>
+<span class="font-label-sm text-label-sm mt-1">Call</span>
+</a>
+<!-- Using Menu as active fallback for Packages since it's a structural sub-item on mobile -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1 scale-90 transition-all" href="#">
+<span class="material-symbols-outlined icon-fill">menu</span>
+<span class="font-label-sm text-label-sm mt-1">Menu</span>
+</a>
+</nav>
+</body></html>

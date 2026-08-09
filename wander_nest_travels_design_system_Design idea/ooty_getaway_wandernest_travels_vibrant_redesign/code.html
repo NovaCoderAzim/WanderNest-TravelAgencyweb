@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ooty Getaway - WanderNest Travels</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1f1b14",
+                        "on-primary-container": "#9becf7",
+                        "secondary-fixed-dim": "#ffb780",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#3c0700",
+                        "surface-container-low": "#fcf2e7",
+                        "on-tertiary-fixed-variant": "#83260e",
+                        "on-background": "#1f1b14",
+                        "primary": "#00535b",
+                        "on-secondary-fixed": "#2f1400",
+                        "primary-container": "#006d77",
+                        "on-secondary-fixed-variant": "#6f3800",
+                        "inverse-primary": "#82d3de",
+                        "surface-tint": "#006972",
+                        "outline": "#6f797a",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#ffab69",
+                        "surface-container-highest": "#ebe1d6",
+                        "primary-fixed-dim": "#82d3de",
+                        "on-surface-variant": "#3e494a",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#8e4e14",
+                        "on-secondary-container": "#783d01",
+                        "tertiary-fixed-dim": "#ffb4a2",
+                        "primary-fixed": "#9ff0fb",
+                        "tertiary-fixed": "#ffdad2",
+                        "surface": "#fff8f3",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#ffd6cc",
+                        "secondary-fixed": "#ffdcc4",
+                        "background": "#fff8f3",
+                        "tertiary": "#882a12",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#001f23",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#004f56",
+                        "surface-variant": "#ebe1d6",
+                        "surface-container-high": "#f1e7dc",
+                        "outline-variant": "#bec8ca",
+                        "surface-dim": "#e2d9ce",
+                        "inverse-on-surface": "#f9efe4",
+                        "surface-container": "#f6ece1",
+                        "inverse-surface": "#353028",
+                        "surface-bright": "#fff8f3",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#a84127",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "sm": "12px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "xl": "80px",
+                        "xs": "4px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased font-body-md text-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav aria-label="Main Navigation" class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-7xl mx-auto hidden md:flex bg-surface/80 backdrop-blur-md shadow-sm rounded-b-xl">
+<div class="font-headline-md text-headline-md font-bold text-primary">WanderNest Travels</div>
+<div class="flex gap-gutter items-center font-label-md text-label-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:scale-105 transition-transform duration-200" href="#">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:scale-105 transition-transform duration-200" href="#">Packages</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:scale-105 transition-transform duration-200" href="#">Fleet</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:scale-105 transition-transform duration-200" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:scale-105 transition-transform duration-200" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:scale-105 transition-transform duration-200" href="#">Gallery</a>
+</div>
+<button class="bg-primary text-on-primary px-lg py-sm rounded-full font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm hover:shadow-md hover:scale-105 transition-transform duration-200">
+            Get a Quote
+        </button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-[80px] md:pt-[100px] pb-[100px] md:pb-0">
+<!-- Hero Section -->
+<section class="relative w-full h-[60vh] min-h-[500px] rounded-b-xl md:rounded-b-[3rem] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A breathtaking, wide-angle shot of the lush, rolling tea gardens of Ooty bathed in soft, early morning golden sunlight. Wispy mist weaves through the vibrant green valleys. The image feels deeply inviting and serene, matching a warm, modern travel aesthetic with high contrast between the bright sky and deep green foliage." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBlJB0SjqcLoVLDxq-rpM2yFDJN-TuKFqUBRyVDgRn2mgC2F6Hn2P-2jTUx_P_JV7dIgKLcQ7WXfD2CDZnPt3pYWHS7yorOs6Wf-Rw8m_KAt6pULmD2DcJ00FDsBFQOoiNoU1qia2QMIg_KMXaZUw8XBUMjhaLbOGyB3NIb6PSOw9dEpWN4ALSNZoXMcyFHueLrgNb8-IADIIDMuiz3y_WSj_iI3RmCHK_eZzbUXxTYzmXP53e6czuj')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-margin-mobile md:p-margin-desktop flex flex-col md:flex-row justify-between items-end max-w-7xl mx-auto inset-x-0">
+<div class="text-on-primary mb-md md:mb-0">
+<span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label-sm text-label-sm mb-4">HILL STATION ESCAPE</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-2 text-surface-bright">Ooty Getaway</h1>
+<p class="font-body-lg text-body-lg flex items-center gap-2 opacity-90">
+<span class="material-symbols-outlined text-surface-bright">calendar_month</span> 3 Days / 2 Nights
+                    </p>
+</div>
+<div class="glass-card p-6 rounded-lg w-full md:w-auto flex flex-col items-start shadow-lg border border-surface-variant">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Starting from</span>
+<div class="font-headline-md text-headline-md text-primary mb-4">₹8,999 <span class="font-body-md text-body-md text-on-surface-variant font-normal">/ person</span></div>
+<button class="w-full bg-secondary text-on-secondary px-8 py-3 rounded-full font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1">
+                        Book Now
+                    </button>
+</div>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl grid grid-cols-1 lg:grid-cols-12 gap-xl relative">
+<!-- Left Column: Content -->
+<div class="lg:col-span-8 flex flex-col gap-xl">
+<!-- Overview -->
+<section>
+<h2 class="font-headline-md text-headline-md text-primary mb-md">Trip Overview</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Escape the heat and hustle of the city with our refreshing 3-day getaway to the "Queen of Hill Stations." Nestled in the Nilgiri Hills, Ooty offers a perfect blend of colonial charm, lush tea gardens, and crisp mountain air. This carefully curated itinerary ensures you experience the best of Ooty and neighboring Coonoor, from serene boat rides to panoramic viewpoints, all while traveling in comfort and style. Perfect for couples, families, and nature lovers seeking a quick, rejuvenating retreat.
+                    </p>
+</section>
+<!-- Itinerary Bento -->
+<section>
+<h2 class="font-headline-md text-headline-md text-primary mb-md">Day-by-Day Journey</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Day 1 -->
+<div class="bg-surface-container-low rounded-xl p-md border border-surface-variant relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container px-4 py-2 rounded-bl-xl font-label-md text-label-md font-bold">01</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2 mt-4">Chennai to Ooty</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                                Early morning departure. Enjoy a scenic drive through the winding Ghat roads. Check-in, relax, and enjoy an evening stroll around Ooty Lake with optional boating.
+                            </p>
+<div class="flex gap-2">
+<span class="bg-surface text-primary px-3 py-1 rounded-full text-xs font-semibold border border-surface-variant">Drive</span>
+<span class="bg-surface text-primary px-3 py-1 rounded-full text-xs font-semibold border border-surface-variant">Ooty Lake</span>
+</div>
+</div>
+<!-- Day 2 -->
+<div class="bg-surface-container-low rounded-xl p-md border border-surface-variant relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container px-4 py-2 rounded-bl-xl font-label-md text-label-md font-bold">02</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2 mt-4">Ooty Exploration</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                                Full day sightseeing including the vibrant Botanical Gardens, the panoramic Doddabetta Peak, and a visit to a local Tea Factory to taste fresh brews.
+                            </p>
+<div class="flex gap-2 flex-wrap">
+<span class="bg-surface text-primary px-3 py-1 rounded-full text-xs font-semibold border border-surface-variant">Botanical Garden</span>
+<span class="bg-surface text-primary px-3 py-1 rounded-full text-xs font-semibold border border-surface-variant">Doddabetta</span>
+</div>
+</div>
+<!-- Day 3 -->
+<div class="bg-surface-container-low rounded-xl p-md border border-surface-variant relative overflow-hidden group hover:shadow-md transition-shadow md:col-span-2 flex flex-col md:flex-row gap-md items-center">
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container px-4 py-2 rounded-bl-xl font-label-md text-label-md font-bold z-10">03</div>
+<div class="w-full md:w-1/3 h-48 md:h-full rounded-lg bg-cover bg-center min-h-[150px]" data-alt="A charming vintage steam train, the Nilgiri Mountain Railway, chugging through a dense, lush green forest near Coonoor. The scene is slightly misty, emphasizing a cool, vintage travel vibe typical of the Nilgiris, rendered in bright, inviting colors." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZ9rWlVjkoGKaiyqCLz6ajXLMLeSVbI6KwkslfXQWA7ETnvrQxB09bxymJ77PEZIY2oA0fjEDO6alQ23ZHt8TJcjR94jKock_Qoc1V-4zFxGj-YrlZO0sEYFL47uBT1Mx-sMBHRxJYJxti2b17Hk-BZ1Iex06-rRbK0JsQy2QbwlZ2p-BKy4jV4bfkQpVzL68sEKQrYsEXHKChXkha_GX5vAG5qfVpsH-elUiNmbJgj627sopk_gPF')"></div>
+<div class="w-full md:w-2/3">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Coonoor to Chennai</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                                    Morning drive to Coonoor. Visit Sim's Park and enjoy views from Dolphin's Nose. Optional heritage train ride back to Mettupalayam, followed by the return journey home.
+                                </p>
+<div class="flex gap-2">
+<span class="bg-surface text-primary px-3 py-1 rounded-full text-xs font-semibold border border-surface-variant">Sim's Park</span>
+<span class="bg-surface text-primary px-3 py-1 rounded-full text-xs font-semibold border border-surface-variant">Heritage Train</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vehicle Options -->
+<section class="bg-surface-container px-md py-lg rounded-[2rem] border border-surface-variant">
+<h2 class="font-headline-md text-headline-md text-primary mb-md">Choose Your Ride</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<div class="bg-surface rounded-xl p-md flex flex-col items-center text-center border border-surface-variant hover:border-primary transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-[48px] text-secondary mb-4 group-hover:scale-110 transition-transform">directions_car</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Premium Sedan</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Perfect for couples or small families (up to 4 pax).</p>
+<span class="text-primary font-label-md text-label-md bg-primary-container/20 px-4 py-1 rounded-full">Included in Base Price</span>
+</div>
+<div class="bg-surface rounded-xl p-md flex flex-col items-center text-center border border-surface-variant hover:border-primary transition-colors cursor-pointer group relative overflow-hidden">
+<div class="absolute top-2 right-2 bg-secondary-container text-on-secondary-container text-xs font-bold px-2 py-1 rounded">+₹3000</div>
+<span class="material-symbols-outlined text-[48px] text-secondary mb-4 group-hover:scale-110 transition-transform">airport_shuttle</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Toyota Innova</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Spacious comfort for larger groups (up to 7 pax).</p>
+<span class="text-primary font-label-md text-label-md bg-primary-container/20 px-4 py-1 rounded-full">Upgrade Option</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Sticky Sidebar -->
+<div class="lg:col-span-4 relative">
+<div class="sticky top-[120px] flex flex-col gap-lg">
+<!-- Inclusions / Exclusions -->
+<div class="bg-surface-container-high rounded-xl p-md shadow-sm border border-surface-variant">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4 border-b border-outline-variant pb-2">What's Included</h3>
+<ul class="space-y-3 mb-6">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">2 Nights accommodation in a 3-star hotel</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Daily Breakfast</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Private AC vehicle for entire trip</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">All toll, parking, and driver allowances</span>
+</li>
+</ul>
+<h3 class="font-headline-sm text-headline-sm text-error mb-4 border-b border-outline-variant pb-2">Exclusions</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-[20px] mt-1">cancel</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Entry tickets to monuments/parks</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-[20px] mt-1">cancel</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Lunch and Dinner</span>
+</li>
+</ul>
+</div>
+<!-- Get a Quote CTA Card -->
+<div class="bg-primary-container text-on-primary-container rounded-xl p-lg text-center shadow-md relative overflow-hidden">
+<div class="absolute -top-10 -right-10 opacity-10">
+<span class="material-symbols-outlined text-[120px]">explore</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-2 relative z-10">Ready for Ooty?</h3>
+<p class="font-body-md text-body-md opacity-90 mb-6 relative z-10">Customize this package or book it as is. We're here to help.</p>
+<button class="w-full bg-secondary text-on-secondary px-6 py-3 rounded-full font-label-md text-label-md hover:bg-surface hover:text-secondary transition-all shadow-sm relative z-10 border-2 border-transparent hover:border-secondary">
+                            Get a Free Quote
+                        </button>
+<p class="font-label-sm text-label-sm mt-4 opacity-75 relative z-10 flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">support_agent</span> 24/7 Support Available
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Mobile) -->
+<nav aria-label="Mobile Navigation" class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin-mobile py-2 shadow-lg bg-surface rounded-t-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-xl px-2 py-1 transition-colors" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-xl px-2 py-1 transition-colors" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-label-sm text-label-sm mt-1">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high rounded-xl px-2 py-1 transition-colors" href="#">
+<span class="material-symbols-outlined">call</span>
+<span class="font-label-sm text-label-sm mt-1">Call</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1 scale-90 transition-all" href="#">
+<span class="material-symbols-outlined">menu</span>
+<span class="font-label-sm text-label-sm mt-1">Menu</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="w-full px-margin-desktop py-xl grid grid-cols-1 md:grid-cols-4 gap-gutter bg-secondary-container rounded-t-lg pb-[100px] md:pb-xl">
+<div class="col-span-1 md:col-span-1 flex flex-col items-start">
+<div class="font-headline-sm text-headline-sm font-bold text-on-secondary-container mb-4">WanderNest Travels</div>
+<p class="font-body-md text-body-md text-on-secondary-container/80 mb-6">Plan the trip. We'll handle the journey.</p>
+</div>
+<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-md font-label-sm text-label-sm">
+<div class="flex flex-col gap-2">
+<a class="text-on-secondary-container/80 hover:text-on-secondary-container hover:translate-x-1 transition-transform focus:ring-2 focus:ring-primary rounded px-1" href="#">Chennai Office</a>
+<a class="text-on-secondary-container/80 hover:text-on-secondary-container hover:translate-x-1 transition-transform focus:ring-2 focus:ring-primary rounded px-1" href="#">WhatsApp Support</a>
+<a class="text-on-secondary-container/80 hover:text-on-secondary-container hover:translate-x-1 transition-transform focus:ring-2 focus:ring-primary rounded px-1" href="#">Email Us</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-on-secondary-container font-bold underline hover:translate-x-1 transition-transform focus:ring-2 focus:ring-primary rounded px-1" href="#">Popular Destinations</a>
+<a class="text-on-secondary-container/80 hover:text-on-secondary-container hover:translate-x-1 transition-transform focus:ring-2 focus:ring-primary rounded px-1" href="#">Privacy Policy</a>
+</div>
+</div>
+<div class="col-span-1 md:col-span-4 mt-8 pt-4 border-t border-on-secondary-container/20 font-label-sm text-label-sm text-on-secondary-container/60 text-center">
+            © 2024 WanderNest Travels. All rights reserved.
+        </div>
+</footer>
+</body></html>
