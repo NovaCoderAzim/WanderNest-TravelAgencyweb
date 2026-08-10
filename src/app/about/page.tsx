@@ -44,39 +44,39 @@ export default function About() {
       />
 
       {/* Story & Philosophy */}
-      <section className="py-20 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 md:px-margin-desktop max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
             <span className="text-xs font-bold text-secondary uppercase tracking-wider block mb-2">How We Started</span>
-            <h2 className="font-display text-3xl font-bold text-primary mb-6">Redefining Highway and Hill Station Tourism</h2>
-            <p className="text-sm text-on-surface-variant leading-relaxed mb-4">
+            <h2 className="font-display text-2xl sm:text-3xl font-bold text-primary mb-4 sm:mb-6">Redefining Highway and Hill Station Tourism</h2>
+            <p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-3 sm:mb-4">
               WanderNest Travels was founded in Chennai with a single objective: to eliminate the stress of local and outstation travel. We observed that travelers frequently struggled with unhygienic vehicles, unprofessional drivers, and opaque pricing.
             </p>
-            <p className="text-sm text-on-surface-variant leading-relaxed mb-6">
+            <p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-6">
               Today, we provide a unified service combining premium pre-screened hotels, expert local sightseeing itineraries, and our own well-maintained fleet of sedans, SUVs, Tempo Travellers, and buses. Whether it is a honeymoon in Kodaikanal, a family getaway to Ooty, a pilgrimage to Madurai, or an airport drop, we handle every detail with premium precision.
             </p>
 
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-on-surface font-semibold">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 text-xs sm:text-sm text-on-surface font-semibold">
               <li className="flex items-center gap-2">
-                <Check className="h-5 w-5 text-emerald-600 shrink-0" />
+                <Check className="h-4.5 w-4.5 text-emerald-600 shrink-0" />
                 100% Chauffeur Driven
               </li>
               <li className="flex items-center gap-2">
-                <Check className="h-5 w-5 text-emerald-600 shrink-0" />
+                <Check className="h-4.5 w-4.5 text-emerald-600 shrink-0" />
                 Clean and Sanitized Cars
               </li>
               <li className="flex items-center gap-2">
-                <Check className="h-5 w-5 text-emerald-600 shrink-0" />
+                <Check className="h-4.5 w-4.5 text-emerald-600 shrink-0" />
                 No Hidden Cost Claims
               </li>
               <li className="flex items-center gap-2">
-                <Check className="h-5 w-5 text-emerald-600 shrink-0" />
+                <Check className="h-4.5 w-4.5 text-emerald-600 shrink-0" />
                 24/7 Helpline Desk
               </li>
             </ul>
           </motion.div>
 
-          <div className="relative rounded-lg overflow-hidden h-[400px] shadow-md border border-surface-container-highest/60">
+          <div className="relative rounded-lg overflow-hidden h-[260px] sm:h-[400px] shadow-md border border-surface-container-highest/60">
             <img
               className="w-full h-full object-cover"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuANqXSV35krvyaOoSc6Wsa0xmt-A9bGLlFG_cY5A5xRwfF3mtXtsnEB42wcQIsQ9s6tq6FEdu_rbcoj9IE_ZSG5MCs10QgDHC6MN5pODS4R8lsUcg0PWxGtwieY48td37ZG3_hBdV7iV3RMHNjbGKOI-ysgKbiQziYrnDDRyjuSiZX0WWwVuUo7WRuJyitq4Pht8BIgPuqbUIPJK9Vm9PuLEFwZfWUsB1yhkhrKPNXV5tTvlaEN4jmR"
@@ -87,12 +87,12 @@ export default function About() {
       </section>
 
       {/* Stats Counter Section */}
-      <section className="bg-surface-container-low py-20 px-margin-mobile md:px-margin-desktop">
+      <section className="bg-surface-container-low py-12 sm:py-20 px-4 sm:px-6 md:px-margin-desktop">
         <div className="max-w-7xl mx-auto text-center">
           <span className="text-xs font-bold text-secondary uppercase tracking-wider block mb-2">Our Reach</span>
-          <h2 className="font-display text-3xl font-bold text-primary mb-12">WanderNest in Numbers</h2>
+          <h2 className="font-display text-2xl sm:text-3xl font-bold text-primary mb-8 sm:mb-12">WanderNest in Numbers</h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
             {[
               { value: "10+", label: "Years Experience", icon: Trophy },
               { value: "10K+", label: "Happy Travellers", icon: Users },
@@ -100,11 +100,11 @@ export default function About() {
               { value: "24/7", label: "Customer Support", icon: Heart },
             ].map((stat, i) => (
               <div key={i} className="flex flex-col items-center">
-                <div className="bg-primary/5 text-primary p-3 rounded-full mb-3">
-                  <stat.icon className="h-6 w-6" />
+                <div className="bg-primary/5 text-primary p-2.5 sm:p-3 rounded-full mb-2 sm:mb-3">
+                  <stat.icon className="h-5 w-5 sm:h-6 sm:w-6" />
                 </div>
-                <div className="text-3xl sm:text-4xl font-bold text-primary mb-1">{stat.value}</div>
-                <div className="text-xs text-on-surface-variant uppercase tracking-wider font-semibold">{stat.label}</div>
+                <div className="text-2xl sm:text-4xl font-bold text-primary mb-0.5 sm:mb-1">{stat.value}</div>
+                <div className="text-[10px] sm:text-xs text-on-surface-variant uppercase tracking-wider font-semibold">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -112,24 +112,24 @@ export default function About() {
       </section>
 
       {/* Core Team Planners */}
-      <section className="py-20 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 md:px-margin-desktop max-w-7xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12">
           <span className="text-xs font-bold text-secondary uppercase tracking-wider block mb-2">Our Experts</span>
-          <h2 className="font-display text-3xl font-bold text-primary">Meet Your Travel Planners</h2>
+          <h2 className="font-display text-2xl sm:text-3xl font-bold text-primary">Meet Your Travel Planners</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {team.map((member, i) => (
-            <div key={i} className="glass-card-light rounded-2xl overflow-hidden hover-lift text-center p-6 flex flex-col items-center border border-white/50">
-              <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-primary/20">
+            <div key={i} className="glass-card-light rounded-2xl overflow-hidden hover-lift text-center p-5 sm:p-6 flex flex-col items-center border border-white/50">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden mb-4 border-2 border-primary/20">
                 <img
                   className="w-full h-full object-cover"
                   src={member.image}
                   alt={member.name}
                 />
               </div>
-              <h3 className="font-display font-bold text-lg text-on-background mb-1">{member.name}</h3>
-              <p className="text-xs text-secondary font-bold uppercase tracking-wider mb-3">{member.role}</p>
+              <h3 className="font-display font-bold text-base sm:text-lg text-on-background mb-1">{member.name}</h3>
+              <p className="text-[11px] sm:text-xs text-secondary font-bold uppercase tracking-wider mb-2 sm:mb-3">{member.role}</p>
               <p className="text-xs text-on-surface-variant leading-relaxed max-w-xs">{member.desc}</p>
             </div>
           ))}
@@ -137,23 +137,23 @@ export default function About() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-primary text-white text-center py-20 px-margin-mobile">
+      <section className="bg-primary text-white text-center py-12 sm:py-20 px-4 sm:px-margin-mobile">
         <div className="max-w-2xl mx-auto">
           <span className="text-xs font-bold text-secondary uppercase tracking-wider block mb-2">Ready to Book?</span>
-          <h2 className="font-display text-3xl font-bold mb-4">Let's Design Your Dream Journey Together</h2>
-          <p className="text-xs sm:text-sm text-[#ebe1d6]/80 leading-relaxed mb-8 max-w-md mx-auto">
+          <h2 className="font-display text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Let's Design Your Dream Journey Together</h2>
+          <p className="text-xs sm:text-sm text-[#ebe1d6]/80 leading-relaxed mb-6 sm:mb-8 max-w-md mx-auto">
             Get in touch with our experts. Whether it's a family tour or a premium Innova outstation rental, we ensure absolute comfort.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4 sm:px-0">
             <Link
               href="/contact"
-              className="bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 py-3 rounded-full text-xs shadow-sm"
+              className="bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 py-3 rounded-full text-xs shadow-sm text-center"
             >
               GET A QUOTE
             </Link>
             <Link
               href="/packages"
-              className="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-3 rounded-full text-xs"
+              className="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-3 rounded-full text-xs text-center"
             >
               EXPLORE PACKAGES
             </Link>

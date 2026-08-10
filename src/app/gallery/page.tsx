@@ -51,9 +51,9 @@ export default function Gallery() {
       />
 
       {/* Gallery Catalog & Filters */}
-      <section className="py-20 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 md:px-margin-desktop max-w-7xl mx-auto">
         {/* Category Filters */}
-        <div className="flex flex-wrap justify-center items-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center items-center gap-1.5 sm:gap-2 mb-8 sm:mb-12">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -61,7 +61,7 @@ export default function Gallery() {
                 setActiveCategory(cat);
                 handleCloseLightbox(); // Reset lightbox index just in case
               }}
-              className={`px-5 py-2 rounded-full text-xs font-bold transition-all duration-200 cursor-pointer ${
+              className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs font-bold transition-all duration-200 cursor-pointer ${
                 activeCategory === cat
                   ? "bg-primary text-white shadow-sm"
                   : "bg-white hover:bg-surface-container-high text-on-surface-variant border border-outline-variant/60"

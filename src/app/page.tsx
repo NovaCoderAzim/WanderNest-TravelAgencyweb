@@ -219,7 +219,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative h-[95vh] flex items-center justify-center pt-20 px-margin-mobile md:px-margin-desktop overflow-hidden">
+      <section className="relative min-h-[580px] sm:min-h-[640px] md:h-[95vh] flex items-center justify-center pt-24 pb-16 md:py-0 px-4 sm:px-6 md:px-margin-desktop overflow-hidden">
         {/* Background Zoom image slideshow */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-transparent to-background z-10"></div>
@@ -240,13 +240,13 @@ export default function Home() {
           </AnimatePresence>
         </div>
 
-        <div className="relative z-20 w-full max-w-7xl mx-auto flex flex-col items-center justify-center text-center mt-10">
+        <div className="relative z-20 w-full max-w-7xl mx-auto flex flex-col items-center justify-center text-center mt-6 md:mt-10">
           {/* Tagline */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-[#006d77]/20 text-[#00535b] border border-[#006d77]/30 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6 backdrop-blur-sm"
+            className="inline-flex items-center gap-2 bg-[#006d77]/20 text-[#00535b] border border-[#006d77]/30 px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-4 sm:mb-6 backdrop-blur-sm"
           >
             <Sparkles className="h-3.5 w-3.5 text-secondary" />
             WanderNest Travels
@@ -257,9 +257,9 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
-            className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-on-background tracking-tight max-w-4xl leading-[1.1] mb-6"
+            className="font-display text-3xl sm:text-5xl md:text-6xl font-bold text-on-background tracking-tight max-w-4xl leading-[1.15] mb-4 sm:mb-6"
           >
-            YOUR NEXT ADVENTURE <br className="hidden md:inline" /> STARTS HERE.
+            YOUR NEXT ADVENTURE <br className="hidden sm:inline" /> STARTS HERE.
           </motion.h1>
 
           {/* Subheading */}
@@ -267,7 +267,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-base sm:text-lg md:text-xl text-on-surface-variant max-w-2xl font-sans mb-8 leading-relaxed"
+            className="text-sm sm:text-lg md:text-xl text-on-surface-variant max-w-2xl font-sans mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0"
           >
             Comfortable journeys, reliable vehicles and memorable trips from Chennai to breathtaking destinations across South India.
           </motion.p>
@@ -277,12 +277,12 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 mb-12"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12 w-full sm:w-auto px-4 sm:px-0"
           >
             <Magnetic>
               <Link
                 href="/packages"
-                className="bg-secondary hover:bg-secondary/95 text-white px-8 py-3.5 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 text-sm flex items-center justify-center gap-2"
+                className="bg-secondary hover:bg-secondary/95 text-white px-7 py-3 sm:px-8 sm:py-3.5 rounded-full font-semibold shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 text-sm flex items-center justify-center gap-2"
               >
                 EXPLORE PACKAGES
                 <ArrowRight className="h-4 w-4" />
@@ -290,7 +290,7 @@ export default function Home() {
             </Magnetic>
             <Link
               href="/fleet"
-              className="bg-white hover:bg-surface-container-low text-primary border border-primary/20 px-8 py-3.5 rounded-full font-semibold shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 text-sm"
+              className="bg-white hover:bg-surface-container-low text-primary border border-primary/20 px-7 py-3 sm:px-8 sm:py-3.5 rounded-full font-semibold shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 text-sm text-center"
             >
               RENT A VEHICLE
             </Link>
@@ -301,31 +301,31 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
-            className="glass-card-light floating-element max-w-lg w-full p-4 rounded-2xl border border-white/60 text-center grid grid-cols-3 gap-6 sm:gap-12"
+            className="glass-card-light floating-element max-w-md sm:max-w-lg w-full p-3 sm:p-4 rounded-2xl border border-white/60 text-center grid grid-cols-3 gap-2 sm:gap-6 md:gap-12"
           >
             <div>
-              <div className="text-xl sm:text-2xl font-bold text-primary">10+ Yrs</div>
-              <div className="text-[10px] sm:text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Experience</div>
+              <div className="text-lg sm:text-2xl font-bold text-primary">10+ Yrs</div>
+              <div className="text-[9px] sm:text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Experience</div>
             </div>
             <div className="border-x border-on-surface-variant/10">
-              <div className="text-xl sm:text-2xl font-bold text-primary">10K+</div>
-              <div className="text-[10px] sm:text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Travellers</div>
+              <div className="text-lg sm:text-2xl font-bold text-primary">10K+</div>
+              <div className="text-[9px] sm:text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Travellers</div>
             </div>
             <div>
-              <div className="text-xl sm:text-2xl font-bold text-primary">24/7</div>
-              <div className="text-[10px] sm:text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Support</div>
+              <div className="text-lg sm:text-2xl font-bold text-primary">24/7</div>
+              <div className="text-[9px] sm:text-xs text-on-surface-variant uppercase tracking-wider font-semibold">Support</div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* 2. TRIP ENQUIRY WIDGET */}
-      <section className="relative z-30 max-w-5xl mx-auto px-margin-mobile -mt-16 md:-mt-20">
+      <section className="relative z-30 max-w-5xl mx-auto px-4 sm:px-6 md:px-margin-desktop -mt-8 sm:-mt-16 md:-mt-20">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="glass-card-light rounded-2xl p-6 md:p-8 shadow-xl border border-white/60"
+          className="glass-card-light rounded-2xl p-4 sm:p-6 md:p-8 shadow-xl border border-white/60"
         >
           <AnimatePresence mode="wait">
             {!enquirySuccess ? (
@@ -917,7 +917,7 @@ export default function Home() {
               {testimonials.slice(0, 4).map((t, idx) => (
                 <div
                   key={`l1-${idx}`}
-                  className="glass-card-light w-[320px] sm:w-[380px] p-6 rounded-2xl border border-white/60 shadow-sm flex flex-col justify-between hover-lift shrink-0"
+                  className="glass-card-light w-[260px] sm:w-[380px] p-4 sm:p-6 rounded-2xl border border-white/60 shadow-sm flex flex-col justify-between hover-lift shrink-0"
                 >
                   <div>
                     <div className="flex items-center gap-1 text-amber-500 mb-3">
@@ -941,7 +941,7 @@ export default function Home() {
               {testimonials.slice(0, 4).map((t, idx) => (
                 <div
                   key={`l1-dup-${idx}`}
-                  className="glass-card-light w-[320px] sm:w-[380px] p-6 rounded-2xl border border-white/60 shadow-sm flex flex-col justify-between hover-lift shrink-0"
+                  className="glass-card-light w-[260px] sm:w-[380px] p-4 sm:p-6 rounded-2xl border border-white/60 shadow-sm flex flex-col justify-between hover-lift shrink-0"
                 >
                   <div>
                     <div className="flex items-center gap-1 text-amber-500 mb-3">
@@ -971,7 +971,7 @@ export default function Home() {
               {testimonials.slice(4, 8).map((t, idx) => (
                 <div
                   key={`l2-${idx}`}
-                  className="glass-card-light w-[320px] sm:w-[380px] p-6 rounded-2xl border border-white/60 shadow-sm flex flex-col justify-between hover-lift shrink-0"
+                  className="glass-card-light w-[260px] sm:w-[380px] p-4 sm:p-6 rounded-2xl border border-white/60 shadow-sm flex flex-col justify-between hover-lift shrink-0"
                 >
                   <div>
                     <div className="flex items-center gap-1 text-amber-500 mb-3">
@@ -995,7 +995,7 @@ export default function Home() {
               {testimonials.slice(4, 8).map((t, idx) => (
                 <div
                   key={`l2-dup-${idx}`}
-                  className="glass-card-light w-[320px] sm:w-[380px] p-6 rounded-2xl border border-white/60 shadow-sm flex flex-col justify-between hover-lift shrink-0"
+                  className="glass-card-light w-[260px] sm:w-[380px] p-4 sm:p-6 rounded-2xl border border-white/60 shadow-sm flex flex-col justify-between hover-lift shrink-0"
                 >
                   <div>
                     <div className="flex items-center gap-1 text-amber-500 mb-3">
@@ -1025,7 +1025,7 @@ export default function Home() {
               {testimonials.slice(8, 12).map((t, idx) => (
                 <div
                   key={`l3-${idx}`}
-                  className="glass-card-light w-[320px] sm:w-[380px] p-6 rounded-2xl border border-white/60 shadow-sm flex flex-col justify-between hover-lift shrink-0"
+                  className="glass-card-light w-[260px] sm:w-[380px] p-4 sm:p-6 rounded-2xl border border-white/60 shadow-sm flex flex-col justify-between hover-lift shrink-0"
                 >
                   <div>
                     <div className="flex items-center gap-1 text-amber-500 mb-3">
@@ -1049,7 +1049,7 @@ export default function Home() {
               {testimonials.slice(8, 12).map((t, idx) => (
                 <div
                   key={`l3-dup-${idx}`}
-                  className="glass-card-light w-[320px] sm:w-[380px] p-6 rounded-2xl border border-white/60 shadow-sm flex flex-col justify-between hover-lift shrink-0"
+                  className="glass-card-light w-[260px] sm:w-[380px] p-4 sm:p-6 rounded-2xl border border-white/60 shadow-sm flex flex-col justify-between hover-lift shrink-0"
                 >
                   <div>
                     <div className="flex items-center gap-1 text-amber-500 mb-3">

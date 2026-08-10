@@ -33,7 +33,7 @@ export default async function DestinationDetail({ params }: DestinationPageProps
   return (
     <div className="pt-20 min-h-screen">
       {/* 1. HERO BANNER */}
-      <section className="relative h-[60vh] min-h-[400px] flex items-end">
+      <section className="relative min-h-[380px] sm:min-h-[440px] md:h-[60vh] flex items-end">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-on-surface via-on-surface/40 to-transparent z-10"></div>
           <img
@@ -43,12 +43,12 @@ export default async function DestinationDetail({ params }: DestinationPageProps
           />
         </div>
 
-        <div className="relative z-20 w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop pb-12 flex flex-col md:flex-row justify-between items-end gap-6 text-white">
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-margin-desktop pb-8 sm:pb-12 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 text-white">
           <div>
-            <span className="inline-block bg-secondary text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-3">
+            <span className="inline-block bg-secondary text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-2.5 sm:mb-3">
               Explore South India
             </span>
-            <h1 className="font-display text-4xl sm:text-5xl font-bold mb-2 tracking-tight">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-2 tracking-tight">
               {dest.name} Tour Packages
             </h1>
             <p className="text-xs sm:text-sm text-surface-bright/80 italic font-medium flex items-center gap-1.5">
@@ -57,14 +57,14 @@ export default async function DestinationDetail({ params }: DestinationPageProps
             </p>
           </div>
 
-          <div className="glass-panel p-5 rounded-lg border border-white/20 text-on-background flex flex-col items-start w-full md:w-auto shadow-md">
+          <div className="glass-panel p-4 sm:p-5 rounded-2xl border border-white/20 text-on-background flex flex-col items-start w-full md:w-auto shadow-md">
             <span className="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Starting from</span>
             <div className="text-2xl font-bold text-primary mb-3">
               ₹{dest.startingPrice.toLocaleString()} <span className="text-xs font-normal text-on-surface-variant">/ person</span>
             </div>
             <Link
               href="/contact"
-              className="w-full bg-secondary hover:bg-secondary/90 text-white text-center py-2 px-6 rounded-full font-bold text-xs shadow transition-colors"
+              className="w-full bg-secondary hover:bg-secondary/90 text-white text-center py-2.5 px-6 rounded-full font-bold text-xs shadow transition-colors"
             >
               BOOK THIS TRIP
             </Link>
@@ -73,7 +73,7 @@ export default async function DestinationDetail({ params }: DestinationPageProps
       </section>
 
       {/* 2. MAIN DETAILS */}
-      <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-20 grid grid-cols-1 lg:grid-cols-12 gap-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-margin-desktop py-12 sm:py-20 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
         {/* Left column: Overview, Attractions, Tips */}
         <div className="lg:col-span-8 flex flex-col gap-12">
           {/* Overview */}

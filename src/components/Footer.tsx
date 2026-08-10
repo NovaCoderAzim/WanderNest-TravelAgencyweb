@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-[#f9efe4] border-t border-primary-container">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-margin-desktop py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
         {/* Brand Column */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-5 sm:gap-6">
           <Link href="/" className="flex items-center gap-2.5 group text-white">
             <div className="bg-[#f9efe4] text-primary p-1.5 rounded-full hover:rotate-12 transition-transform duration-300">
               <svg viewBox="0 0 100 100" className="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,11 +28,11 @@ export default function Footer() {
               WanderNest
             </span>
           </Link>
-          <p className="text-[#ebe1d6]/80 text-sm leading-relaxed max-w-sm">
+          <p className="text-[#ebe1d6]/80 text-xs sm:text-sm leading-relaxed max-w-sm">
             "Plan the trip. We'll handle the journey." Comfort travel, reliable vehicle rental, and custom holiday packages across Tamil Nadu and South India.
           </p>
           {/* Social Icons */}
-          <div className="flex items-center gap-4 mt-2">
+          <div className="flex items-center gap-3 sm:gap-4 mt-1 sm:mt-2">
             <a href="https://www.instagram.com/tnwebz?igsh=ZnZ3N3VtamJ2aGJ3" target="_blank" rel="noopener noreferrer" className="p-2 bg-[#f9efe4]/10 hover:bg-secondary rounded-full transition-colors text-white" aria-label="Instagram">
               <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
             </a>
@@ -128,26 +128,26 @@ export default function Footer() {
       </div>
 
       {/* Bottom Footer Section (Styled Exactly like the screenshot image but bigger) */}
-      <div className="bg-[#020617] text-slate-300 py-10 border-t border-slate-900">
-        <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-4">
+      <div className="bg-[#020617] text-slate-300 py-8 sm:py-10 border-t border-slate-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-margin-desktop flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-4 text-center lg:text-left">
           {/* Left Column: WhatsApp CTA */}
           <a
             href={businessConfig.whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-5 hover:opacity-90 transition-opacity group cursor-pointer w-full lg:w-auto justify-center lg:justify-start"
+            className="flex flex-col sm:flex-row items-center gap-4 sm:gap-5 hover:opacity-90 transition-opacity group cursor-pointer w-full lg:w-auto justify-center lg:justify-start"
           >
-            <div className="bg-[#00c655] hover:bg-[#00b54d] text-white p-4 rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-emerald-500/10 group-hover:scale-105 transition-transform duration-300">
+            <div className="bg-[#00c655] hover:bg-[#00b54d] text-white p-3.5 sm:p-4 rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-emerald-500/10 group-hover:scale-105 transition-transform duration-300">
               {/* WhatsApp Logo SVG */}
-              <svg viewBox="0 0 24 24" className="w-10 h-10 fill-current" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 24 24" className="w-8 h-8 sm:w-10 sm:h-10 fill-current" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.705 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
             </div>
-            <div className="flex flex-col text-left">
-              <span className="font-sans font-bold text-white text-base tracking-wider uppercase leading-snug">
+            <div className="flex flex-col text-center sm:text-left">
+              <span className="font-sans font-bold text-white text-sm sm:text-base tracking-wider uppercase leading-snug">
                 LET'S BUILD YOUR ONLINE PRESENCE
               </span>
-              <span className="text-slate-400 text-sm mt-1 leading-snug">
+              <span className="text-slate-400 text-xs sm:text-sm mt-1 leading-snug max-w-sm">
                 Get a professional website that brings more customers and more growth.
               </span>
             </div>
@@ -157,23 +157,23 @@ export default function Footer() {
           <div className="hidden lg:block h-16 w-[1px] bg-slate-800/80 shrink-0"></div>
 
           {/* Middle Column: Contact Info */}
-          <div className="flex flex-col gap-3 text-sm text-slate-300 w-full lg:w-auto items-center lg:items-start my-2 lg:my-0">
+          <div className="flex flex-col gap-2.5 sm:gap-3 text-xs sm:text-sm text-slate-300 w-full lg:w-auto items-center lg:items-start my-1 lg:my-0">
             <a href={`tel:${businessConfig.phoneRaw}`} className="flex items-center gap-3.5 hover:text-white transition-colors group">
-              <Phone className="h-5 w-5 text-slate-400 group-hover:text-secondary transition-colors animate-none" />
-              <span className="font-semibold text-sm">{businessConfig.phone}</span>
+              <Phone className="h-4.5 w-4.5 sm:h-5 sm:w-5 text-slate-400 group-hover:text-secondary transition-colors" />
+              <span className="font-semibold">{businessConfig.phone}</span>
             </a>
             <a href={`mailto:${businessConfig.email}`} className="flex items-center gap-3.5 hover:text-white transition-colors group">
-              <Mail className="h-5 w-5 text-slate-400 group-hover:text-secondary transition-colors" />
-              <span className="font-semibold text-sm">{businessConfig.email}</span>
+              <Mail className="h-4.5 w-4.5 sm:h-5 sm:w-5 text-slate-400 group-hover:text-secondary transition-colors" />
+              <span className="font-semibold">{businessConfig.email}</span>
             </a>
             <a
               href="https://maps.google.com/?q=Tamil+Nadu,+India"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-start gap-3.5 hover:text-white transition-colors group text-left"
+              className="flex items-start gap-3.5 hover:text-white transition-colors group text-center sm:text-left"
             >
-              <MapPin className="h-5.5 w-5.5 text-slate-400 group-hover:text-secondary transition-colors shrink-0 mt-0.5" />
-              <span className="font-semibold text-sm">{businessConfig.address}</span>
+              <MapPin className="h-5 w-5 sm:h-5.5 sm:w-5.5 text-slate-400 group-hover:text-secondary transition-colors shrink-0 mt-0.5" />
+              <span className="font-semibold">{businessConfig.address}</span>
             </a>
           </div>
 
@@ -182,23 +182,23 @@ export default function Footer() {
 
           {/* Right Column: Designed & Developed By */}
           <div className="flex flex-col items-center lg:items-end w-full lg:w-auto">
-            <span className="text-xs text-slate-500 font-bold tracking-widest uppercase mb-2">
+            <span className="text-[11px] sm:text-xs text-slate-500 font-bold tracking-widest uppercase mb-1.5 sm:mb-2">
               DESIGNED & DEVELOPED BY
             </span>
             <a
               href="https://tnwebz.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 group hover:opacity-90 transition-opacity"
+              className="flex items-center gap-2.5 sm:gap-3 group hover:opacity-90 transition-opacity"
             >
               {/* Red Z Circle Logo */}
               <div className="group-hover:scale-105 transition-transform duration-300">
-                <svg viewBox="0 0 100 100" className="h-9 w-9 shrink-0" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 100 100" className="h-8 w-8 sm:h-9 sm:w-9 shrink-0" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="50" cy="50" r="46" fill="white" stroke="#e2e8f0" strokeWidth="2" />
                   <path d="M30 30h40v12L42 68h28v12H30V68l28-26H30V30z" fill="#ef4444" />
                 </svg>
               </div>
-              <span className="font-display font-black text-white tracking-wider text-xl group-hover:text-red-500 transition-colors">
+              <span className="font-display font-black text-white tracking-wider text-lg sm:text-xl group-hover:text-red-500 transition-colors">
                 TNWEBZ
               </span>
             </a>

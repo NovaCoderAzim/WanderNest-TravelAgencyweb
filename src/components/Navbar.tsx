@@ -130,8 +130,12 @@ export default function Navbar() {
           {/* Mobile menu toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className={`md:hidden p-2 rounded-full hover:bg-surface-container/10 transition-colors ${
-              scrolled ? "text-primary" : "text-white text-shadow-glow"
+            className={`md:hidden p-2 rounded-full hover:bg-surface-container/10 transition-colors relative z-50 ${
+              mobileMenuOpen
+                ? "text-primary"
+                : scrolled
+                  ? "text-primary"
+                  : "text-white text-shadow-glow"
             }`}
             aria-label="Toggle menu"
           >
@@ -147,8 +151,8 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 md:hidden bg-background pt-24 px-margin-mobile flex flex-col justify-between pb-8"
+            transition={{ duration: 0.25 }}
+            className="fixed inset-0 z-40 md:hidden bg-background/98 backdrop-blur-2xl pt-24 px-6 flex flex-col justify-between pb-8 overflow-y-auto"
           >
             <div className="flex flex-col gap-6">
               {navLinks.map((link, idx) => {

@@ -49,10 +49,10 @@ export default function Contact() {
       />
 
       {/* Main Form and Details */}
-      <section className="py-20 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 md:px-margin-desktop max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12">
         {/* Left Column: Contact details */}
-        <div className="lg:col-span-5 flex flex-col gap-8">
-          <div className="flex flex-col gap-3">
+        <div className="lg:col-span-5 flex flex-col gap-6 sm:gap-8">
+          <div className="flex flex-col gap-2.5 sm:gap-3">
             <span className="text-xs font-bold text-secondary uppercase tracking-wider block">Office Coordinates</span>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-primary">Get in Touch</h2>
             <p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
@@ -61,8 +61,8 @@ export default function Contact() {
           </div>
 
           {/* Quick Contact Cards */}
-          <div className="flex flex-col gap-5">
-            <div className="glass-card-light rounded-2xl p-5 flex items-start gap-4 border-l-4 border-l-secondary border-y border-r border-white/60 hover-lift shadow-lg">
+          <div className="flex flex-col gap-3.5 sm:gap-5">
+            <div className="glass-card-light rounded-2xl p-4 sm:p-5 flex items-start gap-3.5 sm:gap-4 border-l-4 border-l-secondary border-y border-r border-white/60 hover-lift shadow-lg">
               <div className="bg-secondary/10 p-3 rounded-full text-secondary shrink-0 flex items-center justify-center">
                 <MapPin className="h-5 w-5" />
               </div>

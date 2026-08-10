@@ -3,8 +3,8 @@ import { Compass, ArrowRight, Home, MapPin, Package } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <div className="min-h-[80vh] flex items-center justify-center pt-28 pb-20 px-margin-mobile md:px-margin-desktop">
-      <div className="max-w-xl mx-auto text-center glass-card-light rounded-3xl p-8 sm:p-12 shadow-2xl border border-white/70 flex flex-col items-center">
+    <div className="min-h-[80vh] flex items-center justify-center pt-28 pb-16 sm:pb-20 px-4 sm:px-6 md:px-margin-desktop">
+      <div className="max-w-xl mx-auto text-center glass-card-light rounded-2xl sm:rounded-3xl p-6 sm:p-12 shadow-2xl border border-white/70 flex flex-col items-center">
         <div className="w-20 h-20 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-6">
           <Compass className="h-10 w-10 text-secondary animate-pulse" />
         </div>

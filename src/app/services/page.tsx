@@ -26,7 +26,7 @@ export default function Services() {
       />
 
       {/* Alternating Services Layout */}
-      <section className="py-20 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto flex flex-col gap-20">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 md:px-margin-desktop max-w-7xl mx-auto flex flex-col gap-12 sm:gap-20">
         {services.map((service, idx) => {
           const isEven = idx % 2 === 0;
           return (
@@ -36,12 +36,12 @@ export default function Services() {
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeIn}
-              className={`flex flex-col lg:flex-row items-center gap-12 border-b border-surface-container-highest/30 pb-20 last:border-b-0 last:pb-0 ${
+              className={`flex flex-col lg:flex-row items-center gap-8 sm:gap-12 border-b border-surface-container-highest/30 pb-12 sm:pb-20 last:border-b-0 last:pb-0 ${
                 isEven ? "" : "lg:flex-row-reverse"
               }`}
             >
               {/* Image Block */}
-              <div className="w-full lg:w-1/2 h-[320px] rounded-lg overflow-hidden relative shadow-sm border border-surface-container-highest/60">
+              <div className="w-full lg:w-1/2 h-[220px] sm:h-[320px] rounded-2xl overflow-hidden relative shadow-sm border border-surface-container-highest/60">
                 <img
                   className="w-full h-full object-cover"
                   src={service.image}
@@ -51,13 +51,13 @@ export default function Services() {
 
               {/* Text Block */}
               <div className="w-full lg:w-1/2 flex flex-col items-start">
-                <div className="bg-primary/5 text-primary p-3 rounded-lg mb-4">
-                  <Compass className="h-6 w-6" />
+                <div className="bg-primary/5 text-primary p-2.5 sm:p-3 rounded-lg mb-3 sm:mb-4">
+                  <Compass className="h-5 w-5 sm:h-6 sm:w-6" />
                 </div>
-                <h2 className="font-display text-2xl sm:text-3xl font-bold text-primary mb-4">
+                <h2 className="font-display text-2xl sm:text-3xl font-bold text-primary mb-3 sm:mb-4">
                   {service.title}
                 </h2>
-                <p className="text-sm text-on-surface-variant leading-relaxed mb-6">
+                <p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed mb-4 sm:mb-6">
                   {service.description}
                 </p>
 

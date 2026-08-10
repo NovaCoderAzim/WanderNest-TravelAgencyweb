@@ -34,7 +34,7 @@ export default function ParallaxHeader({
   return (
     <section
       ref={containerRef}
-      className="bg-primary text-white py-16 text-center relative overflow-hidden min-h-[240px] flex items-center justify-center"
+      className="bg-primary text-white py-12 sm:py-16 text-center relative overflow-hidden min-h-[220px] sm:min-h-[240px] flex items-center justify-center"
     >
       <div className="absolute inset-0 z-0">
         <motion.div
@@ -49,14 +49,14 @@ export default function ParallaxHeader({
         />
       </div>
 
-      <div className="relative z-10 max-w-3xl mx-auto px-margin-mobile">
-        <span className="text-xs font-bold text-secondary uppercase tracking-wider block mb-2">
+      <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-margin-mobile">
+        <span className="text-[11px] sm:text-xs font-bold text-secondary uppercase tracking-wider block mb-2">
           {category}
         </span>
-        <h1 className="font-display text-4xl font-bold tracking-tight mb-3">
+        <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-3">
           {title}
         </h1>
-        <p className="text-xs sm:text-sm text-[#ebe1d6]/85 leading-relaxed max-w-xl mx-auto">
+        <p className="text-xs sm:text-sm text-[#ebe1d6]/85 leading-relaxed max-w-xl mx-auto px-2 sm:px-0">
           {description}
         </p>
       </div>

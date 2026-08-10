@@ -82,10 +82,10 @@ export default function Packages() {
       />
 
       {/* Catalog Filters and Grid */}
-      <section className="py-20 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 md:px-margin-desktop max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Sidebar Filters */}
-          <div className="glass-card-light rounded-2xl p-5 border border-white/60 h-fit flex flex-col gap-6 shadow-xl relative z-10">
+          <div className="glass-card-light rounded-2xl p-4 sm:p-5 border border-white/60 h-fit flex flex-col gap-5 sm:gap-6 shadow-xl relative z-10">
             <h3 className="font-display font-bold text-lg text-primary border-b border-surface-container/60 pb-2">
               Filter Packages
             </h3>

@@ -31,7 +31,7 @@ export default async function VehicleDetail({ params }: VehiclePageProps) {
   return (
     <div className="pt-20 min-h-screen">
       {/* 1. HERO BANNER */}
-      <section className="relative h-[55vh] min-h-[350px] flex items-end">
+      <section className="relative min-h-[380px] sm:min-h-[440px] md:h-[55vh] flex items-end">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-on-surface via-on-surface/40 to-transparent z-10"></div>
           <img
@@ -41,24 +41,24 @@ export default async function VehicleDetail({ params }: VehiclePageProps) {
           />
         </div>
 
-        <div className="relative z-20 w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop pb-12 flex flex-col md:flex-row justify-between items-end gap-6 text-white">
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-margin-desktop pb-8 sm:pb-12 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 text-white">
           <div>
-            <span className="inline-block bg-secondary text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-3">
+            <span className="inline-block bg-secondary text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-2.5 sm:mb-3">
               {vehicle.category} RENTAL
             </span>
-            <h1 className="font-display text-4xl sm:text-5xl font-bold mb-2 tracking-tight">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-2 tracking-tight">
               {vehicle.name}
             </h1>
-            <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-surface-bright/80">
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs font-semibold text-surface-bright/80">
               <span className="flex items-center gap-1.5"><Users className="h-4.5 w-4.5 text-secondary-container" /> {vehicle.seats}</span>
               <span className="flex items-center gap-1.5"><Check className="h-4.5 w-4.5 text-secondary-container" /> {vehicle.ac ? "AC Coach" : "Non-AC"}</span>
               <span className="flex items-center gap-1.5"><Check className="h-4.5 w-4.5 text-secondary-container" /> Chauffeur Driven</span>
             </div>
           </div>
 
-          <div className="glass-panel p-5 rounded-lg border border-white/20 text-on-background flex flex-col items-start w-full md:w-auto shadow-md">
+          <div className="glass-panel p-4 sm:p-5 rounded-2xl border border-white/20 text-on-background flex flex-col items-start w-full md:w-auto shadow-md">
             <span className="text-[10px] font-bold text-on-surface-variant uppercase tracking-wider">Starting from</span>
-            <div className="text-3xl font-bold text-primary mb-3">
+            <div className="text-2xl sm:text-3xl font-bold text-primary mb-3">
               ₹{vehicle.startingPrice.toLocaleString()} <span className="text-xs font-normal text-on-surface-variant">/ {vehicle.priceUnit}</span>
             </div>
             <div className="grid grid-cols-2 gap-2 w-full">
@@ -83,7 +83,7 @@ export default async function VehicleDetail({ params }: VehiclePageProps) {
       </section>
 
       {/* 2. VEHICLE DETAILS CANVAS */}
-      <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-20 grid grid-cols-1 lg:grid-cols-12 gap-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-margin-desktop py-12 sm:py-20 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
         {/* Left Column: Overview, Rates, Features */}
         <div className="lg:col-span-8 flex flex-col gap-12">
           {/* Overview */}
